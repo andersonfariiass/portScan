@@ -1,3 +1,4 @@
+#!/usr/bin/python
 #PortScan Script
 #Curso Introdução a Pentest
 
