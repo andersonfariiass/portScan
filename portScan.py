@@ -12,8 +12,12 @@ print("scanning range: ", rangePort)
 startPort = int(rangePort.split("-", 1)[-2])  # the variable receives the value before the "-"
 endPort = int(rangePort.split("-", 1)[-1])    # the variable receives the value after the "-"
 
-# checks if the second value is greater than the first and inverts to form a range from largest to smallest
-if startPort <= endPort:
+# checks if the values then fall within the range 1-65536
+if (startPort > 65536 or endPort > 65536) or (startPort == 0 or endPort == 0):
+    print("Invalid value, the port range allowed is 1-65536")
+    exit()
+# checks if the second value is greater than the first and inverts to form a range from largest to smallest    
+elif startPort <= endPort:
     pass
 else:
     startPort = int(rangePort.split("-", 1)[-1])
