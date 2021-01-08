@@ -5,10 +5,7 @@
 import socket
 
 host_target = input("Enter the host a scanned being (Ex:. www.domain.com or 192.168.1.1): ")
-
-# host_target = "192.168.27.1"
 rangePort = input("Enter the range of ports to be scanned (Ex:. 1-1024): ")
-
 
 print("scanning target: ", host_target)
 print("scanning range: ", rangePort)
