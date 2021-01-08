@@ -1,4 +1,4 @@
-#!/usr/bin/python   # uncomment this line if you want to run via cli calling python eg :. sudo ./portScan.py
+#!/usr/bin/env python3   # used if you want to run via cli Ex :. ./portScan.py
 # PortScan Script Python
 # @Author: Anderson Farias
 
